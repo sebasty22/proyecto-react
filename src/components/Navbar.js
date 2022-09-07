@@ -1,6 +1,7 @@
 import React from 'react'
 import logo from "../img/logo2.png"
-import styles from "../components/Navbar.css"
+import CarritoImg from "./CardWidget"
+import estilos from "..//components/styles.css"
 
 const Navbar =()=> {
     return (
@@ -13,16 +14,22 @@ const Navbar =()=> {
             <nav>
                        
                         <ul class="menuNav">
-                        <li><a href="#">Menu1</a></li>
-                        <li><a href="#">Menu2</a></li>
-                        <li><a href="#">Menu3</a></li>
+                        <li><a href="">Menu1</a></li>
+                        <li><a href="">Menu2</a></li>
+                        <li><a href="">Menu3</a></li>
                         </ul>
+                        <CarritoImg/>
+                        
+                
                      </nav>
+                     </header>         
+         
+                 
                 
                 
         
             
-        </header>
+        
         </>
     )
 }
