@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import collar from "../img/collar.jpg"
+import collar from "../../img/collar.jpg"
 
 
 
@@ -16,7 +16,7 @@ function ItemCount({ stock, initial, onADD}) {
     }
 
     const reset = () => {
-        setCount(0)
+        setCount(1)
     }
 
     

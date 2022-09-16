@@ -1,7 +1,7 @@
 import React from "react" 
-import ItemListContainer from "./components/ItemListContainer.js"
-import Navbar from "./components/Navbar"
-import Count from "./components/itemCount"
+import ItemListContainer from "./components/ItemlistContainer/ItemListContainer"
+import Navbar from "./components/navbar/Navbar"
+import Count from "./components/Itemcount/itemCount"
 
 
 const App =()=>{
@@ -15,7 +15,6 @@ const App =()=>{
         <>
         <Navbar />
         <ItemListContainer greeting={bienvenida}  />
-        <Count stock={10} initial={1} onADD={onADD}/>
         </>
     )
         
