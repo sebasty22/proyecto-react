@@ -11,6 +11,7 @@ function Item({datos}) {
         <p>{datos.precio}</p>
 
         </div>
+        
     </>
     )
 }
