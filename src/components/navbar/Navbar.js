@@ -2,6 +2,7 @@ import React from 'react'
 import logo from "../../img/logo2.png"
 import CarritoImg from "../Cardwidget/CardWidget"
 import estilos from "../styles.css"
+import { NavLink } from 'react-router-dom'
 
 const Navbar =()=> {
     return (
@@ -14,9 +15,9 @@ const Navbar =()=> {
             <nav>
                        
                         <ul class="menuNav">
-                        <li><a href="#">Menu1</a></li>
-                        <li><a href="#">Menu2</a></li>
-                        <li><a href="#">Menu3</a></li>
+                        <li><NavLink to="/">Home</NavLink></li>
+                        <li><NavLink to="/categoria/categoria1">Collares</NavLink></li>
+                        <li><NavLink to="/categoria/categoria2">Anillos</NavLink></li>
                         </ul>
                         <CarritoImg/>
                         

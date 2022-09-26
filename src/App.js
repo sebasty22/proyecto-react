@@ -3,6 +3,8 @@ import ItemListContainer from "./components/ItemlistContainer/ItemListContainer"
 import Navbar from "./components/navbar/Navbar"
 import Count from "./components/Itemcount/itemCount"
 import ItemDetailContainer from "./components/ItemDetailContainer"
+import { BrowserRouter, Route, Routes } from "react-router-dom"
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 const App =()=>{
@@ -14,9 +16,14 @@ const App =()=>{
 
     return (
         <>
+        <BrowserRouter>
         <Navbar />
-        <ItemListContainer greeting={bienvenida}  />
-        <ItemDetailContainer/>
+        <Routes>
+        <Route path="/" element={<ItemListContainer greeting={bienvenida}  />} />
+        <Route path="/categoria/:categoriaId" element={<ItemListContainer greeting={bienvenida}  />} />
+        <Route path="/detail/:detailId" element={<ItemDetailContainer  />} />
+        </Routes>
+        </BrowserRouter>
         </>
     )
         

@@ -1,20 +1,31 @@
 import React,{useState, useEffect} from 'react'
 import ItemDetail from "../ItemDetail"
-import { fetch } from '../../promesa/fetch'
 import { productos } from '../../stock/stock'
-
+import { Link, useParams } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 function ItemDetailContainer () {
     const[data,setData]= useState({})
+    
+    const{ detailId }=useParams();
 
     useEffect(()=>{
-        fetch(productos[2])
-           .then(res => setData(res))
-        },[])          
+        const detailData = new Promise(
+            resolve=>{setTimeout(()=>{
+                resolve(productos)
+            },1000)
+
+            }
+        );
+        detailData.then(res=>setData(res.find(prod => prod.id===parseInt(detailId))));
+    },[])
 
 
     return (
+       
         <div className='carddata'>
+         
         <ItemDetail data={data}/>
+        
         </div>
     )
 }

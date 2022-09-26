@@ -21,7 +21,9 @@ header{
     ;
 }
 
-.Titlog{display: flex; }
+.Titlog{display: flex;
+        align-items: center;
+         }
 
 h1{padding-left: 0.5rem;
     margin-top: 2.5rem;
