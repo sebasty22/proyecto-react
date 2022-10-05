@@ -25,8 +25,7 @@ function ItemCount({ stock, initial, onADD}) {
         <main>
 
         <div className='ContenedorCard'>
-            <img className='imgProd' src={collar} alt="" />
-            <h3>Collar <span>ONIX NEGRO</span></h3>
+            
             <h4>{count}</h4>
             <div className='ContenedorContador'>
                 <button disabled={count >= stock} onClick={sumar} className='sumar'><i class="fa-solid fa-plus"></i></button>

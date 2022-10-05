@@ -3,7 +3,11 @@ import { Link } from 'react-router-dom'
 import styles from "./item.css"
 
 
+
+
 function Item({datos}) {
+
+  
     return (
     <>
        <div className='card'>
